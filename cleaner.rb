@@ -32,6 +32,7 @@ loop do
     fileNames.each do |file|
         filePath = File.join(dir, file)
         if File.exists?(filePath)
+            p "Deleting " + filePath
             File.delete(filePath)
         end
     end
